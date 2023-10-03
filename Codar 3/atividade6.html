@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex6</title>
+</head>
+<body>
+    <script>
+        //Escreva um programa para ler 2 notas de um aluno, calcular e imprimir a média final. Considere que a nota de aprovação é 9,5. Logo após escrever a mensagem "Calcular a média de outro aluno Sim/Não?" e solicitar um resposta. Se a resposta for "S", o programa deve ser executado novamente, caso contrário deve ser encerrado exibindo a quantidade de alunos aprovados.
+        
+        
+        var nota1 = parseFloat(prompt("Escreva a primeira nota: "));
+        var nota2 = parseFloat(prompt("Escreva a segunda nota: "));
+        var aluno = 0;
+        
+        var resultado = (nota1 + nota2) / 2;
+
+        
+        if(resultado >= 9.5){
+            alert("aprovado");
+            aluno++;       
+        }else{
+            alert("reprovado");
+        }
+
+        
+        let pergunta = prompt("Deseja calcular a média de uma nota? S/N: ");
+        
+        
+        while(pergunta == "s"){
+            var nota1 = parseFloat(prompt("Escreva a primeira nota: "));
+            var nota2 = parseFloat(prompt("Escreva a segunda nota: "));
+            resultado = (nota1 + nota2) / 2;            
+            
+            
+            if(resultado >= 9.5){
+                alert("aprovado");
+                aluno++;       
+            }else{
+                alert("reprovado");
+            }
+            
+            
+            pergunta = prompt("Deseja avaliar outro aluno? S/N");
+        }
+
+        alert("Número de alunos aprovados: " + aluno);
+        document.write("Número de alunos aprovados: " + aluno);
+
+    </script>
+</body>
+</html>

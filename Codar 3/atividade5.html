@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Faça um algoritmo que calcule e escreva a média aritmética dos dois números inteiros informados pelo usuário e todos os números inteiros entre eles. Considere que o primeiro sempre será menor que o segundo.
+
+      let valor1 = parseFloat(prompt("Escreva o primeiro valor"));
+      let valor2 = parseFloat(prompt("Escreva o segundo valor"));
+      let soma = 0;
+      let quantidade = 0;
+      let resultado;
+
+      while (valor1 < valor2) {
+        soma = soma + valor1;
+        quantidade++;
+        valor1++;
+      }
+      resultado = soma / quantidade;
+      alert("Resultado: " + resultado);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Faça um algoritmo que calcule e escreva a média aritmética dos números inteiros entre 15 (inclusive) e 100 (inclusive)
+
+      let numero = 15;
+      let soma = 0;
+      let quantidade = 0;
+
+      while (numero >= 15 && numero <= 100) {
+        soma = soma + numero;
+        quantidade++;
+        numero++;
+      }
+
+      let resultado = soma / quantidade;
+      alert("Valor: " + resultado);
+    </script>
+  </body>
+</html>
